@@ -161,6 +161,10 @@ call unite#filters#matcher_default#use(['matcher_fuzzy'])
 map <Leader>r :call RunNearestSpec()<CR>
 
 " vim-airline
+set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme='light' " dark simple badwolf solarized solarized2
 set noshowmode
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"

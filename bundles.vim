@@ -45,7 +45,7 @@ NeoBundle 'bling/vim-airline'
 " plugin for resolving three-way merge conflicts
 NeoBundle 'sjl/splice.vim'
 " plugin for visually displaying indent levels
-NeoBundle 'Indent-Guides'
+" NeoBundle 'Indent-Guides'
 " end certain structures automatically, e.g. begin/end etc.
 NeoBundle 'tpope/vim-endwise'
 " automatic closing of quotes, parenthesis, brackets, etc.
@@ -53,7 +53,7 @@ NeoBundle 'Raimondi/delimitMate'
 " calendar, duh!
 NeoBundle 'calendar.vim--Matsumoto'
 " A Narrow Region Plugin (similar to Emacs)
-"NeoBundle 'chrisbra/NrrwRgn'
+NeoBundle 'chrisbra/NrrwRgn'
 " url based hyperlinks for text files
 NeoBundle 'utl.vim'
 " A clone of Emacs' Org-mode for Vim
@@ -158,12 +158,17 @@ NeoBundle 'Shougo/vimproc.vim', {
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'ujihisa/unite-colorscheme'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
+
+" Node.js
+NeoBundle 'moll/vim-node'
+NeoBundle 'rsludge/vim-sails'
+NeoBundle 'dsawardekar/ember.vim'
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
 call neobundle#end()
-
-filetype plugin indent on
 
